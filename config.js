@@ -20,4 +20,6 @@ config.log = {
   "file": "bot.log"
 }
 
+config.bot_prefix = '!lb.';
+
 module.exports = config;
