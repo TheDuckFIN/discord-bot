@@ -2,6 +2,9 @@
 
 const config = require('./config');
 
+const path = require('path');
+global.__appBase = path.resolve(__dirname);
+
 const logger = require('./src/logger.js');
 
 const Discord = require('discord.js');

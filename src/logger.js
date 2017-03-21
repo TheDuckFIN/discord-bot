@@ -1,6 +1,6 @@
 'use strict';
 
-const config = require('./../config');
+const config = require(__appBase + '/config');
 
 const winston = require('winston');
 
