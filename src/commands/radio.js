@@ -4,8 +4,7 @@ const logger = require(__appBase + '/src/logger');
 const request = require('request');
 
 function handler(client, message, params) {
-  const server = message.channel.guild;
-  const voiceConnection = server.voiceConnection;
+  const voiceConnection = message.channel.guild.voiceConnection;
   
   if (!voiceConnection) {
     logger.debug('Radio command called, but I\'m not on a voice channel.');
