@@ -12,6 +12,9 @@ const client = new Discord.Client();
 
 const commands = require('./src/commands.js')(client);
 
+client.on("debug", (msg) => logger.debug(msg));
+client.on("warn", (msg) => logger.warn(msg));
+
 client.on('ready', () => {
   logger.info(`Logged in as ${client.user.username}, ready for action!`);
 });
