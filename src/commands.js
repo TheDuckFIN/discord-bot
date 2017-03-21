@@ -29,8 +29,8 @@ module.exports = (client) => {
   const module = {};
 
   module.handle = (message) => {
-    let msg_split = message.content.split(" ");
-    let command = msg_split[0].substring(config.bot_prefix.length);
+    const msg_split = message.content.split(" ");
+    const command = msg_split[0].substring(config.bot_prefix.length);
 
     if (commands.hasOwnProperty(command)) {
       logger.debug('Command called:', command);
